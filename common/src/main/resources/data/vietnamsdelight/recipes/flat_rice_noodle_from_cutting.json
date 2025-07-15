@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "vietnamsdelight:rice_noodle_sheet"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "vietnamsdelight:flat_rice_noodle"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

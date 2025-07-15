@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "vietnamsdelight:flat_rice_noodle"
+    },
+    {
+      "item": "farmersdelight:bone_broth"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "vietnamsdelight:pho"
+  }
+}

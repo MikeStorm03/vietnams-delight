@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "vietnamsdelight:pho"
+    },
+    {
+      "tag": "c:foods/cooked_meats/cooked_chicken"
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "vietnamsdelight:chicken_pho"
+  }
+}

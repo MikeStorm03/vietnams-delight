@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": {
+      "item": "minecraft:wheat"
+    },
+    "R": [
+      {
+        "item": "vietnamsdelight:rice_flour"
+      },
+      {
+        "item": "farmersdelight:rice"
+      }
+    ]
+  },
+  "pattern": [
+    "##R"
+  ],
+  "result": {
+    "item": "vietnamsdelight:banh_mi"
+  }
+}

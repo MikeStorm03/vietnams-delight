@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "hauntedharvest",
+        "corndelight",
+        "culturaldelights"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:seeds/corn"
+    }
+  ],
+  "result": {
+    "item": "vietnamsdelight:corn_starch",
+    "count": 1
+  }
+}

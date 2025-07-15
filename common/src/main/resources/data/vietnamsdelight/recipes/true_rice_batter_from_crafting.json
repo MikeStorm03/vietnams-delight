@@ -1,0 +1,38 @@
+{
+  "fabric:load_conditions": [
+    {
+        "condition": "fabric:any_mod_loaded",
+        "values": [
+          "hauntedharvest",
+          "corndelight",
+          "culturaldelights"
+        ]
+      }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "vietnamsdelight:rice_flour"
+    },
+    {
+      "item": "vietnamsdelight:rice_flour"
+    },
+    {
+      "item": "vietnamsdelight:rice_flour"
+    },
+    {
+      "item": "vietnamsdelight:corn_starch"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "vietnamsdelight:rice_batter"
+  }
+}

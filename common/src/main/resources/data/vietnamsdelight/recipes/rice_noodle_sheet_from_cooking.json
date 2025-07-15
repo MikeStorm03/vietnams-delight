@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "vietnamsdelight:rice_batter"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "vietnamsdelight:rice_noodle_sheet"
+  }
+}

@@ -1,5 +1,7 @@
 package net.zachsroom.vietnamsdelight.item;
 
+import com.msg.vietnamsdelight.multiloader_compat.fd_classes.FD_Effects;
+
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -28,5 +30,20 @@ public class ModFoodComponents {
                                                                         .nutrition(3)
                                                                         .saturationModifier(0.3333334F)
                                                                         .fast()
+                                                                        .build();
+   public static final FoodProperties PHO = (new FoodProperties.Builder())
+                                                                        .nutrition(10)
+                                                                        .saturationModifier(0.75F)
+                                                                        .effect(new MobEffectInstance(FD_Effects.COMFORT, 3600, 0), 1.0F)
+                                                                        .build();
+   public static final FoodProperties BEEFPHO = (new FoodProperties.Builder())
+                                                                        .nutrition(15)
+                                                                        .saturationModifier(0.75F)
+                                                                        .effect(new MobEffectInstance(FD_Effects.NOURISHMENT, 6000, 0), 1.0F)
+                                                                        .build();
+   public static final FoodProperties CHICKENPHO = (new FoodProperties.Builder())
+                                                                        .nutrition(12)
+                                                                        .saturationModifier(0.75F)
+                                                                        .effect(new MobEffectInstance(FD_Effects.COMFORT, 6000, 0), 1.0F)
                                                                         .build();
 }

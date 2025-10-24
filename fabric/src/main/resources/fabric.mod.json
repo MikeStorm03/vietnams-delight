@@ -17,8 +17,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.msg.ExampleMod",
-            "net.zachsroom.vietnamsdelight.VietnamsDelight"
+            "com.msg.vietnamsdelight.VietnamsDelight"
         ]
     },
     "mixins": [

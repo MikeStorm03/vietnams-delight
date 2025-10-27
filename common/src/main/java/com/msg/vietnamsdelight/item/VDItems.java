@@ -6,7 +6,6 @@ import com.msg.vietnamsdelight.Common;
 import com.msg.vietnamsdelight.multiloader_compat.fd_classes.FD_Items;
 import com.msg.vietnamsdelight.multiloader_compat.registers.RegistryHelper;
 
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.zachsroom.vietnamsdelight.item.ModFoodComponents;
 
@@ -40,6 +39,6 @@ public class VDItems {
     public static final Supplier<Item> CHICKENPHO = ITEMS.register("chicken_pho", () -> (Item) FD_Items.consumableItem.newInstance(FD_Items.bowlFoodItem(ModFoodComponents.CHICKENPHO)));
 
     // Non la
-    public static final Supplier<Item> NONLA = ITEMS.register("non_la", () -> new ArmorItem(ModArmorMaterials.NONLA, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final Supplier<Item> NONLA = ITEMS.register("non_la", () -> new NonLaItem());
 
 }

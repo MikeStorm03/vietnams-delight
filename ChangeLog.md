@@ -1,4 +1,5 @@
 ## 1.0.1
+* New logo
 * Change old textures
 * Some little changes in code to compat with Mike's other mods and setup multiloader development enviroment
 

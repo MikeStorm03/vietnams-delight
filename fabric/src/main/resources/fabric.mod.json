@@ -18,6 +18,9 @@
     "entrypoints": {
         "main": [
             "com.msg.vietnamsdelight.VietnamsDelight"
+        ],
+        "client": [
+            "com.msg.vietnamsdelight.Client"
         ]
     },
     "mixins": [

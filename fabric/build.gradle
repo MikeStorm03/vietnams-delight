@@ -35,6 +35,8 @@ dependencies {
 
     modLocalRuntime "maven.modrinth:sodium:mc1.21.1-0.6.13-fabric"
 
+    modRuntimeOnly "me.djtheredstoner:DevAuth-fabric:1.2.1"
+
 }
 
 loom {

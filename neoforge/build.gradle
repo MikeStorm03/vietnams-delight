@@ -6,11 +6,13 @@ plugins {
 dependencies {
 
     implementation "maven.modrinth:farmers-delight:1.21.1-1.2.9"
-    implementation "maven.modrinth:corn-delight:1.1.8-1.21.1"
-    implementation "maven.modrinth:mmlib:1.2.14-1.21.1"
 
-    implementation "maven.modrinth:sodium:mc1.21.1-0.6.13-neoforge"
+    runtimeOnly "maven.modrinth:corn-delight:1.1.8-1.21.1"
+    runtimeOnly "maven.modrinth:mmlib:1.2.14-1.21.1"
 
+    runtimeOnly "maven.modrinth:sodium:mc1.21.1-0.6.13-neoforge"
+
+    runtimeOnly "me.djtheredstoner:DevAuth-neoforge:1.2.1"
 }
 
 neoForge {

@@ -10,7 +10,7 @@
       }
   ],
   "type": "minecraft:crafting_shapeless",
-  "category": "food",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:water_bucket"
@@ -33,6 +33,6 @@
   ],
   "result": {
     "count": 1,
-    "item": "vietnamsdelight:rice_batter"
+    "id": "vietnamsdelight:rice_batter"
   }
 }

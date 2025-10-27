@@ -11,10 +11,10 @@
   },
   "pattern": [
     "SSS",
-    "B B",
-    "   "
+    "B B"
   ],
   "result": {
-    "item": "vietnamsdelight:non_la"
+    "id": "vietnamsdelight:non_la",
+    "count": 1
   }
 }

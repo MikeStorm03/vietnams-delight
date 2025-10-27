@@ -7,8 +7,10 @@
   ],
   "result": [
     {
-      "count": 4,
-      "item": "vietnamsdelight:flat_rice_noodle"
+      "item": {
+        "count": 4,
+        "id": "vietnamsdelight:flat_rice_noodle"
+      }
     }
   ],
   "tool": {

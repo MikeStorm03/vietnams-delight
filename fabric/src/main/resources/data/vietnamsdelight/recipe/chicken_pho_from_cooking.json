@@ -1,0 +1,49 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "vietnamsdelight:flat_rice_noodle"
+    },
+    {
+      "tag": "c:bones"
+    },
+    {
+      "fabric:type": "fabric:any",
+      "ingredients": [
+        {
+          "item": "minecraft:glow_berries"
+        },
+        {
+          "tag": "c:mushrooms"
+        },
+        {
+          "item": "minecraft:hanging_roots"
+        },
+        {
+          "item": "minecraft:glow_lichen"
+        }
+      ]
+    },
+    {
+      "fabric:type": "fabric:any",
+      "ingredients": [
+        {
+          "tag": "c:foods/cooked_chicken"
+        },
+        {
+          "tag": "c:foods/raw_chicken"
+        }
+      ]
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "vietnamsdelight:chicken_pho"
+  }
+}

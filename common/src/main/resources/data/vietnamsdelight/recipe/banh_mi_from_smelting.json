@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "vietnamsdelight:rice_mixed_wheat_dough"
   },
-  "result": "vietnamsdelight:banh_mi"
+  "result": {
+    "id": "vietnamsdelight:banh_mi"
+  }
 }

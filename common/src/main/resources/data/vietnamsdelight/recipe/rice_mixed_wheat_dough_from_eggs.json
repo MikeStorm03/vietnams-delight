@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "food",
+  "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:water_bucket"
+      "tag": "c:eggs"
     },
     {
       "item": "minecraft:wheat"
@@ -11,17 +11,17 @@
     {
       "item": "minecraft:wheat"
     },
-    [
-      {
+      [
+        {
         "item": "vietnamsdelight:rice_flour"
       },
-      {
-        "item": "farmersdelight:rice"
-      }
-    ]
+        {
+          "item": "farmersdelight:rice"
+        }
+        ]
   ],
   "result": {
     "count": 3,
-    "item": "vietnamsdelight:rice_mixed_wheat_dough"
+    "id": "vietnamsdelight:rice_mixed_wheat_dough"
   }
 }

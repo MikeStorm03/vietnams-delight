@@ -40,7 +40,7 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
-modId = "corndelight"
+modId = "corn_delight"
 type="optional"
 versionRange="[1, )"
 ordering = "NONE"

@@ -1,12 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "food",
+  "category": "misc",
   "ingredients": [
     {
-      "item": "vietnamsdelight:flat_rice_noodle"
-    },
-    {
-      "item": "farmersdelight:bone_broth"
+      "item": "vietnamsdelight:pho"
     },
     {
       "tag": "c:foods/cooked_meats/cooked_chicken"
@@ -17,6 +14,6 @@
   ],
   "result": {
     "count": 1,
-    "item": "vietnamsdelight:chicken_pho"
+    "id": "vietnamsdelight:chicken_pho"
   }
 }

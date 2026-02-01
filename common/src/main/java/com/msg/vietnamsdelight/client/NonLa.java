@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.msg.vietnamsdelight.Constants;
 
 import net.minecraft.client.model.HumanoidArmorModel;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -27,47 +28,31 @@ public class NonLa extends HumanoidArmorModel<LivingEntity> {
 	}
 
 	public static LayerDefinition createBodyLayer() {
-		MeshDefinition meshdefinition = new MeshDefinition();
-		PartDefinition partdefinition = meshdefinition.getRoot();
+		MeshDefinition meshDefinition = HumanoidModel.createMesh(new CubeDeformation(1.0F), 0.0F);
+		PartDefinition partDefinition = meshDefinition.getRoot();
 
-		@SuppressWarnings("unused")
-		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create()
-																			.texOffs(0, 34).addBox(-6.0F, -5.0F, -6.0F, 12.0F, 1.0F, 12.0F, new CubeDeformation(0.0F))
-																			.texOffs(0, 23).addBox(-5.0F, -6.0F, -5.0F, 10.0F, 1.0F, 10.0F, new CubeDeformation(0.0F))
-																			.texOffs(0, 0).addBox(-4.0F, -7.0F, -4.0F, 8.0F, 7.0F, 8.0F, new CubeDeformation(0.0F))
-																			.texOffs(0, 16).addBox(-3.0F, -8.0F, -3.0F, 6.0F, 1.0F, 6.0F, new CubeDeformation(0.0F))
-																			.texOffs(24, 18).addBox(-2.0F, -9.0F, -2.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F))
-																			.texOffs(24, 15).addBox(-1.0F, -10.0F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
-																	PartPose.offset(0.0F, 0.0F, 0.0F));
+		partDefinition.addOrReplaceChild("head", CubeListBuilder.create()
+																.texOffs(0, 51).addBox(-1.0F, -14.0F, -1.0F, 2.0F, 1.0F, 2.0F)
+																.texOffs(0, 46).addBox(-2.0F, -13.0F, -2.0F, 4.0F, 1.0F, 4.0F)
+																.texOffs(0, 0).addBox(-3.0F, -12.0F, -3.0F, 6.0F, 1.0F, 6.0F)
+																.texOffs(32, 0).addBox(-4.0F, -11.0F, -4.0F, 8.0F, 1.0F, 8.0F)
+																.texOffs(0, 7).addBox(-5.0F, -10.0F, -5.0F, 10.0F, 1.0F, 10.0F)
+																.texOffs(0, 18).addBox(-6.0F, -9.0F, -6.0F, 12.0F, 1.0F, 12.0F)
+																.texOffs(0, 31).addBox(-7.0F, -8.0F, -7.0F, 14.0F, 1.0F, 14.0F)
+																.texOffs(0, 46).addBox(-8.0F, -7.0F, -8.0F, 16.0F, 1.0F, 16.0F),
+												PartPose.offset(0.0F, -5.0F, 0.0F));
 
-		@SuppressWarnings("unused")
-		PartDefinition hat = partdefinition.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-		@SuppressWarnings("unused")
-		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-		@SuppressWarnings("unused")
-		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-		@SuppressWarnings("unused")
-		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-		@SuppressWarnings("unused")
-		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-		@SuppressWarnings("unused")
-		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		return LayerDefinition.create(meshdefinition, 48, 48);
+		return LayerDefinition.create(meshDefinition, 64, 64);
 	}
 
 	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int color) {
 		poseStack.pushPose();
-
         if (this.young){
-            poseStack.scale(0.76F, 0.76F, 0.76F);
-            poseStack.translate(0.0F, 0.82F, 0.0F);
-        } else {
-			poseStack.scale(1.2F, 1.2F, 1.2F);
-			if (this.crouching) poseStack.translate(0.0F, -0.05F, 0.0F);
-		}
-		
+            poseStack.scale(0.75F, 0.75F, 0.75F);
+			poseStack.translate(0.0F, 1.0F, 0.0F);
+        }
 		head.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
 		poseStack.popPose();
 	}

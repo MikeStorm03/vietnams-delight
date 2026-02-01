@@ -34,6 +34,7 @@ dependencies {
     modLocalRuntime "maven.modrinth:corn-delight-fabric:1.21-1.0.0"
 
     modLocalRuntime "maven.modrinth:sodium:mc1.21.1-0.6.13-fabric"
+    modLocalRuntime "maven.modrinth:modmenu:11.0.3"
 
     modRuntimeOnly "me.djtheredstoner:DevAuth-fabric:1.2.1"
 

@@ -1,0 +1,68 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_rice_noodle_and_broth": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "vietnamsdelight:flat_rice_noodle"
+                    },
+                    {
+                        "items": "farmersdelight:bone_broth"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+            },
+        "has_pho": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "vietnamsdelight:pho"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_beef": {
+            "conditions": {
+                "items": [
+                    {
+                        
+                    }
+                ] 
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_recipe_a": {
+            "conditions": {
+                "recipe": "vietnamsdelight:beef_pho_from_crafting_a"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_recipe_b": {
+            "conditions": {
+                "recipe": "vietnamsdelight:beef_pho_from_crafting_b"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_rice_noodle_and_broth",
+            "has_recipe_a",
+            "has_recipe_b"
+        ],
+        [
+            "has_pho",
+            "has_recipe_a",
+            "has_recipe_b"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "vietnamsdelight:beef_pho_from_crafting_a",
+            "vietnamsdelight:beef_pho_from_crafting_b"
+        ]
+    }
+}

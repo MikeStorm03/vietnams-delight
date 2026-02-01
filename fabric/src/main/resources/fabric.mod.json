@@ -4,10 +4,7 @@
     "version": "${version}",
     "name": "${mod_name}",
     "description": "${description}",
-    "authors": [
-        "Zach's room",
-        "MikeStorm03"
-    ],
+    "authors": ["${mod_author}"],
     "contact": {
         "homepage": "https://modrinth.com/project/vietnams-delight-reborn",
         "sources": "https://github.com/MikeStorm03/vietnams-delight"

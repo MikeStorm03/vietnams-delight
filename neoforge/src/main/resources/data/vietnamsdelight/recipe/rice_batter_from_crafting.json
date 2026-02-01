@@ -1,16 +1,22 @@
 {
-  "fabric:load_conditions": [
+  "neoforge:conditions": [
     {
-      "condition": "fabric:not",
-      "value": {
-        "condition": "fabric:any_mod_loaded",
+        "type": "neoforge:not",
         "values": [
-          "hauntedharvest",
-          "corndelight",
-          "culturaldelights"
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "hauntedharvest"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "corn_delight"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "culturaldelights"
+          }
         ]
       }
-    }
   ],
   "type": "minecraft:crafting_shapeless",
   "category": "misc",

@@ -8,6 +8,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderer;
 public class Client implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        ArmorRenderer.register(new NonLaRenderer(), VDItems.NONLA.get());
+        ArmorRenderer.register(new NonLaRenderer(), VDItems.NONLA);
     }
 }

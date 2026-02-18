@@ -1,13 +1,13 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    {
-      "item": "farmersdelight:rice"
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "farmersdelight:rice"
+        }
+    ],
+    "result": {
+        "id": "vietnamsdelight:rice_flour",
+        "count": 2
     }
-  ],
-  "result": {
-    "id": "vietnamsdelight:rice_flour",
-    "count": 2
-  }
 }

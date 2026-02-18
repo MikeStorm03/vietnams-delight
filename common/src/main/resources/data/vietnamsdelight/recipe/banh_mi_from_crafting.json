@@ -1,24 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "#": {
-      "item": "minecraft:wheat"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "minecraft:wheat"
+        },
+        "R": [
+            {
+                "item": "vietnamsdelight:rice_flour"
+            },
+            {
+                "item": "farmersdelight:rice"
+            }
+        ]
     },
-    "R": [
-      {
-        "item": "vietnamsdelight:rice_flour"
-      },
-      {
-        "item": "farmersdelight:rice"
-      }
-    ]
-  },
-  "pattern": [
-    "##R"
-  ],
-  "result": {
-    "id": "vietnamsdelight:banh_mi",
-    "count": 1
-  }
+    "pattern": [
+        "##R"
+    ],
+    "result": {
+        "id": "vietnamsdelight:banh_mi",
+        "count": 1
+    }
 }

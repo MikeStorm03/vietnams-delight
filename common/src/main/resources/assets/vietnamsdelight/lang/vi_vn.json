@@ -1,0 +1,25 @@
+{
+    "item.vietnamsdelight.rice_flour": "Bột gạo",
+    "item.vietnamsdelight.banh_mi": "Bánh mì",
+    "item.vietnamsdelight.rice_mixed_wheat_dough": "Bột mì trộn bột gạo",
+    "item.vietnamsdelight.rice_batter": "Tô bột gạo",
+    "item.vietnamsdelight.rice_noodle_sheet": "Lá phở",
+    "item.vietnamsdelight.flat_rice_noodle": "Bánh phở",
+    "item.vietnamsdelight.pho": "Phở",
+    "item.vietnamsdelight.beef_pho": "Phở bò",
+    "item.vietnamsdelight.corn_starch": "Bột bắp",
+    "item.vietnamsdelight.chicken_pho": "Phở gà",
+    "item.vietnamsdelight.non_la": "Nón lá",
+
+    "itemgroup.VD_GROUP": "Vietnam's Delight",
+
+    "item.vietnamsdelight.robusta_coffee_beans": "Hạt cà phê Robusta",
+    "item.vietnamsdelight.arabica_coffee_beans": "Hạt cà phê Arabica",
+
+    "item.vietnamsdelight.robusta_coffee_pouch": "Túi cà phê Robusta",
+    "item.vietnamsdelight.arabica_coffee_pouch": "Túi cà phê Arabica",
+
+    "block.vietnamsdelight.robusta_coffee_bag": "Bao cà phê Robusta",
+    "block.vietnamsdelight.arabica_coffee_bag": "Bao cà phê Arabica"
+
+}

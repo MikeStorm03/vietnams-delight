@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "arabica_coffee_pouch",
+    "ingredients": [
+        {
+            "item": "vietnamsdelight:arabica_coffee_bag"
+        }
+    ],
+    "result": {
+        "id": "vietnamsdelight:arabica_coffee_pouch",
+        "count": 9
+    }
+}

@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:smelting",
-  "category": "food",
-  "experience": 0.35,
-  "cookingtime": 200,
-  "ingredient": {
-    "item": "vietnamsdelight:rice_mixed_wheat_dough"
-  },
-  "result": {
-    "id": "vietnamsdelight:banh_mi"
-  }
+    "type": "minecraft:smelting",
+    "category": "food",
+    "experience": 0.35,
+    "cookingtime": 200,
+    "ingredient": {
+        "item": "vietnamsdelight:rice_mixed_wheat_dough"
+    },
+    "result": {
+        "id": "vietnamsdelight:banh_mi"
+    }
 }

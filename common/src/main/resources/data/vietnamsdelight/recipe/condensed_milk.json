@@ -1,0 +1,27 @@
+{
+    "type": "farmersdelight:cooking",
+    "cookingtime": 100,
+    "experience": 0.35,
+    "ingredients": [
+        {
+            "item": "minecraft:milk_bucket"
+        },
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "item": "minecraft:sugar"
+        }
+    ],
+    "recipe_book_tab": "misc",
+    "result": {
+        "id": "vietnamsdelight:condensed_milk",
+        "count": 1
+    }
+}

@@ -14,6 +14,6 @@ public class Client {
 
     @SubscribeEvent
     public static void onRegisterClientExtensions(RegisterClientExtensionsEvent event) {
-        event.registerItem(new NonLaRenderer(), VDItems.NONLA.get());
+        event.registerItem(new NonLaRenderer(), VDItems.NONLA);
     }
 }

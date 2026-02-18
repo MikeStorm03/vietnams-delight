@@ -1,20 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "S": {
-      "item": "farmersdelight:straw"
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+        "S": {
+            "item": "farmersdelight:straw"
+        },
+        "B": {
+            "item": "minecraft:bamboo"
+        }
     },
-    "B": {
-      "item": "minecraft:bamboo"
+    "pattern": [
+        "SSS",
+        "B B"
+    ],
+    "result": {
+        "id": "vietnamsdelight:non_la",
+        "count": 1
     }
-  },
-  "pattern": [
-    "SSS",
-    "B B"
-  ],
-  "result": {
-    "id": "vietnamsdelight:non_la",
-    "count": 1
-  }
 }

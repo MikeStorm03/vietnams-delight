@@ -1,20 +1,30 @@
 package com.msg.vietnamsdelight;
 
-import com.msg.vietnamsdelight.item.CreativeTabs;
 import com.msg.vietnamsdelight.item.VDItems;
-import com.msg.vietnamsdelight.platform.FoxRegister;
 
+import net.minecraft.core.Registry;
+
+// import me.emafire003.dev.custombrewrecipes.CustomBrewRecipeRegister;
+
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.level.block.CropBlock;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.registries.RegisterEvent;
 
 @Mod(Constants.ID)
+@EventBusSubscriber(modid = Constants.ID)
 public class VietnamsDelight {
 
     public VietnamsDelight(IEventBus eventBus) {
-
         Common.init();
+    }
 
-        FoxRegister.registry(eventBus,FoxRegister.ITEMS, VDItems.ITEMS);
-        FoxRegister.registry(eventBus, FoxRegister.CREATIVE_TABS, CreativeTabs.CREATIVE_TABS);
+    @SubscribeEvent
+    public static void registerSetup(RegisterEvent event) {
+        Registry<?> registry = event.getRegistry();
+        if (registry.equals(BuiltInRegistries.ITEM)) VDItems.init();
     }
 }

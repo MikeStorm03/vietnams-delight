@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "robusta_coffee_pouch",
+    "ingredients": [
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        },
+        {
+            "item": "vietnamsdelight:robusta_coffee_beans"
+        }
+    ],
+    "result": {
+        "id": "vietnamsdelight:robusta_coffee_pouch",
+        "count": 1
+    }
+}

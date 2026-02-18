@@ -12,38 +12,38 @@ public class ModFoodComponents {
                                                                         .saturationModifier(1)
                                                                         .effect(new MobEffectInstance(MobEffects.HUNGER, 600), 0.3F)
                                                                         .build();
-   public static final FoodProperties BANHMI =  (new FoodProperties.Builder())
-                                                                        .nutrition(3)
-                                                                        .saturationModifier(1.3333334F)
-                                                                        .build();
-   public static final FoodProperties RICEBATTER = (new FoodProperties.Builder())
-                                                                        .nutrition(2)
-                                                                        .saturationModifier(0.8F)
-                                                                        .saturationModifier(1)
-                                                                        .effect(new MobEffectInstance(MobEffects.HUNGER, 600), 0.3F)
-                                                                        .build();
-   public static final FoodProperties RICENOODLESHEET = (new FoodProperties.Builder())
-                                                                        .nutrition(4)
-                                                                        .saturationModifier(0.25F)
-                                                                        .build();
-   public static final FoodProperties FLATRICENOODLE = (new FoodProperties.Builder())
-                                                                        .nutrition(3)
-                                                                        .saturationModifier(0.3333334F)
-                                                                        .fast()
-                                                                        .build();
-   public static final FoodProperties PHO = (new FoodProperties.Builder())
-                                                                        .nutrition(10)
-                                                                        .saturationModifier(0.75F)
-                                                                        .effect(new MobEffectInstance(FD_Effects.COMFORT, 3600, 0), 1.0F)
-                                                                        .build();
-   public static final FoodProperties BEEFPHO = (new FoodProperties.Builder())
-                                                                        .nutrition(15)
-                                                                        .saturationModifier(0.75F)
-                                                                        .effect(new MobEffectInstance(FD_Effects.NOURISHMENT, 6000, 0), 1.0F)
-                                                                        .build();
-   public static final FoodProperties CHICKENPHO = (new FoodProperties.Builder())
-                                                                        .nutrition(12)
-                                                                        .saturationModifier(0.75F)
-                                                                        .effect(new MobEffectInstance(FD_Effects.COMFORT, 6000, 0), 1.0F)
-                                                                        .build();
+    public static final FoodProperties BANHMI =  (new FoodProperties.Builder())
+                                                                            .nutrition(3)
+                                                                            .saturationModifier(1.3333334F)
+                                                                            .build();
+    public static final FoodProperties RICEBATTER = (new FoodProperties.Builder())
+                                                                            .nutrition(2)
+                                                                            .saturationModifier(0.8F)
+                                                                            .saturationModifier(1)
+                                                                            .effect(new MobEffectInstance(MobEffects.HUNGER, 600), 0.3F)
+                                                                            .build();
+    public static final FoodProperties RICENOODLESHEET = (new FoodProperties.Builder())
+                                                                            .nutrition(4)
+                                                                            .saturationModifier(0.25F)
+                                                                            .build();
+    public static final FoodProperties FLATRICENOODLE = (new FoodProperties.Builder())
+                                                                            .nutrition(3)
+                                                                            .saturationModifier(0.3333334F)
+                                                                            .fast()
+                                                                            .build();
+    public static final FoodProperties PHO = (new FoodProperties.Builder())
+                                                                            .nutrition(10)
+                                                                            .saturationModifier(0.75F)
+                                                                            .effect(new MobEffectInstance(FD_Effects.COMFORT, 3600, 0), 1.0F)
+                                                                            .build();
+    public static final FoodProperties BEEFPHO = (new FoodProperties.Builder())
+                                                                            .nutrition(15)
+                                                                            .saturationModifier(0.75F)
+                                                                            .effect(new MobEffectInstance(FD_Effects.NOURISHMENT, 6000, 0), 1.0F)
+                                                                            .build();
+    public static final FoodProperties CHICKENPHO = (new FoodProperties.Builder())
+                                                                            .nutrition(12)
+                                                                            .saturationModifier(0.75F)
+                                                                            .effect(new MobEffectInstance(FD_Effects.COMFORT, 6000, 0), 1.0F)
+                                                                            .build();
 }

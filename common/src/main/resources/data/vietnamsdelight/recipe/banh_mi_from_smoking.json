@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:smoking",
-  "category": "food",
-  "experience": 0.35,
-  "cookingtime": 100,
-  "ingredient": {
-    "item": "vietnamsdelight:rice_mixed_wheat_dough"
-  },
-  "result": {
-    "id": "vietnamsdelight:banh_mi"
-  }
+    "type": "minecraft:smoking",
+    "category": "food",
+    "experience": 0.35,
+    "cookingtime": 100,
+    "ingredient": {
+        "item": "vietnamsdelight:rice_mixed_wheat_dough"
+    },
+    "result": {
+        "id": "vietnamsdelight:banh_mi"
+    }
 }

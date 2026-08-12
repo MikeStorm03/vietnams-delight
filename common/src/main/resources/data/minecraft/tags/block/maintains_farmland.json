@@ -1,7 +1,6 @@
 {
-    "replace": false,
     "values": [
-        "vietnamsdelight:robusta_coffee",
-        "vietnamsdelight:arabica_coffee"
-    ]
+        "vietnamsdelight:coffee"
+    ],
+    "replace": false
 }

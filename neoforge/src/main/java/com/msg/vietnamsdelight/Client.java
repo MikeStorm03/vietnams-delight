@@ -1,6 +1,6 @@
 package com.msg.vietnamsdelight;
 
-import com.msg.vietnamsdelight.item.VDItems;
+import com.msg.vietnamsdelight.registries.VDItems;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;

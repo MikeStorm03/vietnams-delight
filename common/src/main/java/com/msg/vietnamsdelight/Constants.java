@@ -3,10 +3,17 @@ package com.msg.vietnamsdelight;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Constants {
+import net.minecraft.resources.ResourceLocation;
 
-	public static final String ID = "vietnams_delight_reborn";
-	public static final String NAMESPACE = "vietnamsdelight";
-	public static final String NAME = "Vietnam's Delight Reborn";
-	public static final Logger LOG = LoggerFactory.getLogger(NAME);
+public interface Constants {
+
+	String ID = "vietnams_delight_reborn";
+	String NAMESPACE = "vietnamsdelight";
+	String NAME = "Vietnam's Delight Reborn";
+	Logger LOG = LoggerFactory.getLogger(NAME);
+
+    static ResourceLocation resourcesLocation(String path){
+        return ResourceLocation.fromNamespaceAndPath(NAMESPACE, path);
+    }
+
 }

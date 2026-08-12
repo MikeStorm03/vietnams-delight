@@ -11,15 +11,22 @@
     "item.vietnamsdelight.chicken_pho": "Chicken Pho",
     "item.vietnamsdelight.non_la": "Non La",
 
-    "itemgroup.VD_GROUP": "Vietnam's Delight",
+    "itemgroup.vietnamsdelight": "Vietnam's Delight",
 
-    "item.vietnamsdelight.robusta_coffee_beans": "Robusta Coffee Beans",
-    "item.vietnamsdelight.arabica_coffee_beans": "Arabica Coffee Beans",
+    "item.vietnamsdelight.clay_cup": "Clay Cup",
+    "item.vietnamsdelight.ceramic_cup": "Ceramic Cup",
 
-    "item.vietnamsdelight.robusta_coffee_pouch": "Robusta Coffee Pouch",
-    "item.vietnamsdelight.arabica_coffee_pouch": "Arabica Coffee Pouch",
+    "item.vietnamsdelight.coffee_beans": "Coffee Beans",
+    "item.vietnamsdelight.coffee_pouch": "Coffee Pouch",
+    "block.vietnamsdelight.coffee_box": "Coffee Box",
 
-    "block.vietnamsdelight.robusta_coffee_bag": "Robusta Coffee Bag",
-    "block.vietnamsdelight.arabica_coffee_bag": "Arabica Coffee Bag"
+    "item.vietnamsdelight.condensed_milk": "Condensed Milk",
 
+    "item.vietnamsdelight.roasted_coffee_beans": "Roasted Coffee Beans",
+    "item.vietnamsdelight.coffee_cup": "Coffee Cup",
+    "farmersdelight.tooltip.coffee_cup": "A hot cup of Coffee",
+    "item.vietnamsdelight.coffee.black_coffee": "Black Coffee",
+    "item.vietnamsdelight.coffee.milk_coffee": "Milk Coffee",
+    "item.vietnamsdelight.coffee.bac_xiu": "Bac Xiu",
+    "item.vietnamsdelight.coffee.egg_coffee": "Egg Coffee"
 }

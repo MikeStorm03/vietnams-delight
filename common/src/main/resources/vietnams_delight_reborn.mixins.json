@@ -4,11 +4,12 @@
   "package": "com.msg.vietnamsdelight.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_18",
-  "mixins": [],
+  "mixins": [
+    "MobMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {
     "defaultRequire": 1
   }
 }
-

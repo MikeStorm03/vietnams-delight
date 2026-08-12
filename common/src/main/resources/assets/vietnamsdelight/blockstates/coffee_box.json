@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=east": {
+			"model": "vietnamsdelight:block/coffee_box",
+			"y": 90
+		},
+		"facing=north": {
+			"model": "vietnamsdelight:block/coffee_box"
+		},
+		"facing=south": {
+			"model": "vietnamsdelight:block/coffee_box",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "vietnamsdelight:block/coffee_box",
+			"y": 270
+		}
+	}
+}

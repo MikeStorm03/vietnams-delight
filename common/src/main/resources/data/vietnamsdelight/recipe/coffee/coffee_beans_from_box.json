@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "coffee_beans",
+    "ingredients": [
+        {
+            "item": "vietnamsdelight:coffee_box"
+        }
+    ],
+    "result": {
+        "id": "vietnamsdelight:coffee_beans",
+        "count": 81
+    }
+}

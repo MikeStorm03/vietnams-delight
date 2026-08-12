@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        },
+        {
+            "item": "vietnamsdelight:coffee_pouch"
+        }
+    ],
+    "result": {
+        "id": "vietnamsdelight:coffee_box",
+        "count": 1
+    }
+}

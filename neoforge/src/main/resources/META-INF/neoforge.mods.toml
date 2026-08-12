@@ -1,14 +1,15 @@
 modLoader = "javafml"
 loaderVersion = "${neoforge_loader_version_range}"
 license = "${license}"
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+sources="https://github.com/MikeStorm03/vietnams-delight"
+issueTrackerURL="https://github.com/MikeStorm03/vietnams-delight/issues"
 
 [[mods]]
 modId = "${mod_id}"
 version = "${version}"
 displayName = "${mod_name}"
 displayURL="https://modrinth.com/project/vietnams-delight-reborn"
-logoFile="${mod_id}.png"
+logoFile="${mod_id}_banner.png"
 credits="${credits}"
 authors = "${mod_author}"
 description = '''${description}'''
@@ -40,8 +41,22 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
+modId = "custombrewrecipes"
+type="required"
+versionRange="[1, )"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
 modId = "corn_delight"
 type="optional"
+versionRange="[1, )"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "coffee_delight"
+type="discouraged"
 versionRange="[1, )"
 ordering = "NONE"
 side = "BOTH"

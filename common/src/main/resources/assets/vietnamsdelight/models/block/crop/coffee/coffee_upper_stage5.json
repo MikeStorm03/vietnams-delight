@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cross",
+	"textures": {
+		"cross": "vietnamsdelight:block/coffee/coffee_upper_stage5",
+		"particle": "vietnamsdelight:block/coffee/coffee_upper_stage5"
+	}
+}

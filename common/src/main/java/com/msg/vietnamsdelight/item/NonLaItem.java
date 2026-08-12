@@ -14,7 +14,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class NonLaItem extends ArmorItem {
 
-    public static final ResourceLocation textureLocation = ResourceLocation.fromNamespaceAndPath(Constants.NAMESPACE, "textures/models/armor/non_la.png");
+    public static final ResourceLocation textureLocation = Constants.resourcesLocation("textures/models/armor/non_la.png");
 
     public NonLaItem() {
         super(VDArmorMaterials.NONLA, ArmorItem.Type.HELMET, new Item.Properties());

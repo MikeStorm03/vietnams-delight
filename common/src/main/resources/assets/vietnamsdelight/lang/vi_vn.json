@@ -11,15 +11,22 @@
     "item.vietnamsdelight.chicken_pho": "Phở gà",
     "item.vietnamsdelight.non_la": "Nón lá",
 
-    "itemgroup.VD_GROUP": "Vietnam's Delight",
+    "itemgroup.vietnamsdelight": "Vietnam's Delight",
 
-    "item.vietnamsdelight.robusta_coffee_beans": "Hạt cà phê Robusta",
-    "item.vietnamsdelight.arabica_coffee_beans": "Hạt cà phê Arabica",
+    "item.vietnamsdelight.clay_cup": "Cốc đất sét",
+    "item.vietnamsdelight.ceramic_cup": "Cốc sứ",
 
-    "item.vietnamsdelight.robusta_coffee_pouch": "Túi cà phê Robusta",
-    "item.vietnamsdelight.arabica_coffee_pouch": "Túi cà phê Arabica",
+    "item.vietnamsdelight.coffee_beans": "Hạt cà phê",
+    "item.vietnamsdelight.coffee_pouch": "Túi cà phê",
+    "block.vietnamsdelight.coffee_box": "Thùng cà phê",
 
-    "block.vietnamsdelight.robusta_coffee_bag": "Bao cà phê Robusta",
-    "block.vietnamsdelight.arabica_coffee_bag": "Bao cà phê Arabica"
+    "item.vietnamsdelight.condensed_milk": "Sữa đặc",
 
+    "item.vietnamsdelight.roasted_coffee_beans": "Cà phê rang",
+    "item.vietnamsdelight.coffee_cup": "Cốc cà phê",
+    "farmersdelight.tooltip.coffee_cup": "Một cốc cà phê nóng hổi",
+    "item.vietnamsdelight.coffee.black_coffee": "Cà phê đen",
+    "item.vietnamsdelight.coffee.milk_cofee": "Cà phê sữa",
+    "item.vietnamsdelight.coffee.bac_xiu": "Bạc xỉu",
+    "item.vietnamsdelight.coffee.egg_coffee": "Cà phê trứng"
 }

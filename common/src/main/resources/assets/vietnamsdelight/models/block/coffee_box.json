@@ -1,0 +1,19 @@
+{
+    "parent": "block/cube",
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [ 0, 135, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.40, 0.40, 0.40 ]
+        }
+    },
+    "textures": {
+        "particle": "vietnamsdelight:block/coffee/coffee_box_north",
+        "down": "vietnamsdelight:block/coffee/coffee_box_down",
+        "up": "vietnamsdelight:block/coffee/coffee_box_up",
+        "north": "vietnamsdelight:block/coffee/coffee_box_north",
+        "east": "vietnamsdelight:block/coffee/coffee_box_east",
+        "south": "vietnamsdelight:block/coffee/coffee_box_south",
+        "west": "vietnamsdelight:block/coffee/coffee_box_west"
+    }
+}

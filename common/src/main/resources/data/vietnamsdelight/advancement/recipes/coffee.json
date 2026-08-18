@@ -3,7 +3,7 @@
     "criteria": {
         "has_beans_recipe_1": {
             "conditions": {
-                "recipe": "vietnamsdelight:coffee/coffee_beans_from_pouch"
+                "recipe": "vietnamsdelight:coffee/coffee_beans_from_pack"
             },
             "trigger": "minecraft:recipe_unlocked"
         },
@@ -13,15 +13,15 @@
             },
             "trigger": "minecraft:recipe_unlocked"
         },
-        "has_pouch_recipe_1": {
+        "has_pack_recipe_1": {
             "conditions": {
-                "recipe": "vietnamsdelight:coffee/coffee_pouch_from_beans"
+                "recipe": "vietnamsdelight:coffee/coffee_pack_from_beans"
             },
             "trigger": "minecraft:recipe_unlocked"
         },
-        "has_pouch_recipe_2": {
+        "has_pack_recipe_2": {
             "conditions": {
-                "recipe": "vietnamsdelight:coffee/coffee_pouch_from_bag"
+                "recipe": "vietnamsdelight:coffee/coffee_pack_from_bag"
             },
             "trigger": "minecraft:recipe_unlocked"
         },
@@ -41,11 +41,11 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "has_coffee_pouch": {
+        "has_coffee_pack": {
             "conditions": {
                 "items": [
                     {
-                        "items": "vietnamsdelight:coffee_pouch"
+                        "items": "vietnamsdelight:coffee_pack"
                     }
                 ]
             },
@@ -66,20 +66,20 @@
         [
             "has_beans_recipe_1",
             "has_beans_recipe_2",
-            "has_pouch_recipe_1",
-            "has_pouch_recipe_2",
+            "has_pack_recipe_1",
+            "has_pack_recipe_2",
             "has_bag_recipe",
             "has_coffee_beans",
-            "has_coffee_pouch",
+            "has_coffee_pack",
             "has_coffee_box"
         ]
     ],
     "rewards": {
         "recipes": [
-            "vietnamsdelight:coffee/coffee_beans_from_pouch",
+            "vietnamsdelight:coffee/coffee_beans_from_pack",
             "vietnamsdelight:coffee/coffee_beans_from_bag",
-            "vietnamsdelight:coffee/coffee_pouch_from_beans",
-            "vietnamsdelight:coffee/coffee_pouch_from_bag",
+            "vietnamsdelight:coffee/coffee_pack_from_beans",
+            "vietnamsdelight:coffee/coffee_pack_from_bag",
             "vietnamsdelight:coffee/coffee_box"
         ]
     }

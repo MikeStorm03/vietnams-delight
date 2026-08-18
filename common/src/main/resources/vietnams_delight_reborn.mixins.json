@@ -1,15 +1,17 @@
 {
-  "required": true,
-  "minVersion": "0.8",
-  "package": "com.msg.vietnamsdelight.mixin",
-  "refmap": "${mod_id}.refmap.json",
-  "compatibilityLevel": "JAVA_18",
-  "mixins": [
-    "MobMixin"
-  ],
-  "client": [],
-  "server": [],
-  "injectors": {
-    "defaultRequire": 1
-  }
+    "required": true,
+    "minVersion": "0.8",
+    "package": "com.msg.vietnamsdelight.mixin",
+    "refmap": "${mod_id}.refmap.json",
+    "compatibilityLevel": "JAVA_18",
+    "mixins": [
+        "MobMixin",
+        "BushBlockInvoker",
+        "ShearsItemMixin"
+    ],
+    "client": [],
+    "server": [],
+    "injectors": {
+        "defaultRequire": 1
+    }
 }

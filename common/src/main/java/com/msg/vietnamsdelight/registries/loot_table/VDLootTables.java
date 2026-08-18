@@ -17,6 +17,4 @@ public interface VDLootTables {
             throw new IllegalArgumentException(name + " is already a registered built-in loot table");
         }
     }
-
-    static void init(){}
 }

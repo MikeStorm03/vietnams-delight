@@ -4,7 +4,6 @@ import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.msg.vietnamsdelight.Constants;
 import com.msg.vietnamsdelight.registries.loot_table.VDLootContexts;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -55,21 +54,21 @@ public abstract class Perennical2BlocksTallCrop extends VD2BlocksTallCrop {
     protected void revertToAge(BlockState state, Level level, BlockPos pos, int age) {
         if (this.isUpper(state)) {
             if (this.ageGrowTaller() < age){
+                level.setBlock(pos, Blocks.AIR.defaultBlockState(), UPDATE_SUPPRESS_DROPS | UPDATE_CLIENTS);
+                level.setBlock(pos.below(), this.getStateForAge(age, DoubleBlockHalf.LOWER), UPDATE_CLIENTS);
+            } else {
                 level.setBlock(pos.below(), this.getStateForAge(age, DoubleBlockHalf.LOWER), UPDATE_CLIENTS);
                 level.setBlock(pos, this.getStateForAge(age, DoubleBlockHalf.UPPER), UPDATE_CLIENTS);
-            } else {
-                level.setBlock(pos, Blocks.AIR.defaultBlockState(), UPDATE_SUPPRESS_DROPS);
-                level.setBlock(pos.below(), this.getStateForAge(age, DoubleBlockHalf.LOWER), UPDATE_CLIENTS);
             }
         }
         else {
             if (this.ageGrowTaller() < age){
+                level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), UPDATE_SUPPRESS_DROPS | UPDATE_CLIENTS);
                 level.setBlock(pos, this.getStateForAge(age, DoubleBlockHalf.LOWER), UPDATE_CLIENTS);
-                level.setBlock(pos.above(), this.getStateForAge(age, DoubleBlockHalf.UPPER), UPDATE_CLIENTS);
             }
             else {
-                level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), UPDATE_SUPPRESS_DROPS);
                 level.setBlock(pos, this.getStateForAge(age, DoubleBlockHalf.LOWER), UPDATE_CLIENTS);
+                level.setBlock(pos.above(), this.getStateForAge(age, DoubleBlockHalf.UPPER), UPDATE_CLIENTS);
             }
         }
     }
@@ -88,14 +87,15 @@ public abstract class Perennical2BlocksTallCrop extends VD2BlocksTallCrop {
         if (resourceKey == BuiltInLootTables.EMPTY) {
             return InteractionResult.PASS;
         }
-        if (!level.isClientSide){   
+        if (!level.isClientSide){
             LootParams.Builder builder = (new LootParams.Builder((ServerLevel) level))
                                                                                     .withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(pos))
-                                                                                    .withParameter(LootContextParams.TOOL, ItemStack.EMPTY);
-            LootParams lootParams = builder.withParameter(LootContextParams.BLOCK_STATE, state).create(VDLootContexts.CROP_YIELD);
-            ObjectArrayList<ItemStack> lootTable = level.getServer().reloadableRegistries().getLootTable(resourceKey).getRandomItems(lootParams);
-            if (!lootTable.isEmpty()) {
-                for (ItemStack i : lootTable) popResource(level, pos, i);
+                                                                                    .withParameter(LootContextParams.TOOL, ItemStack.EMPTY)
+                                                                                    .withParameter(LootContextParams.BLOCK_STATE, state);
+            LootParams lootParams = builder.create(VDLootContexts.CROP_YIELD);
+            ObjectArrayList<ItemStack> itemStacks = level.getServer().reloadableRegistries().getLootTable(resourceKey).getRandomItems(lootParams);
+            if (!itemStacks.isEmpty()) {
+                for (ItemStack i : itemStacks) popResource(level, pos, i);
                 this.revertToAge(state, level, pos);
             }
         }

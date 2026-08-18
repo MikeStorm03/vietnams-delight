@@ -1,13 +1,13 @@
 {
     "type": "minecraft:crafting_shapeless",
-    "group": "coffee_pouch",
+    "group": "coffee_pack",
     "ingredients": [
         {
             "item": "vietnamsdelight:coffee_box"
         }
     ],
     "result": {
-        "id": "vietnamsdelight:coffee_pouch",
+        "id": "vietnamsdelight:coffee_pack",
         "count": 9
     }
 }

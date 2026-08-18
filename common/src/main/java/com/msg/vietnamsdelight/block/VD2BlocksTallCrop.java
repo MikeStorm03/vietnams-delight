@@ -90,11 +90,6 @@ public abstract class VD2BlocksTallCrop extends CropBlock {
         return seedItem.get();
     }
 
-    @Override
-    protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
-        return super.mayPlaceOn(state, level, pos);
-    }
-
     public void growCrops(Level level, BlockPos pos, BlockState state, int nextAge) {
         int currentAge = this.getAge(state);
         nextAge = currentAge + nextAge;

@@ -2,7 +2,7 @@
     "type": "minecraft:campfire_cooking",
     "ingredient": [
         {
-            "item": "vietnamsdelight:roasted_coffee_beans"
+            "item": "vietnamsdelight:coffee_beans"
         }
     ],
     "result": {

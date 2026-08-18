@@ -25,4 +25,4 @@ runs
 
 *.ini
 *.ico
-*.lnk
+shortcut/

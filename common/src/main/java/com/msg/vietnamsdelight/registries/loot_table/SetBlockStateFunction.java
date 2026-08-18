@@ -17,6 +17,7 @@ import net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunct
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.functions.SetNameFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemConditions;
 
 public class SetBlockStateFunction extends LootItemConditionalFunction {
     // public static final MapCodec<SetBlockStateFunction> CODEC = RecordCodecBuilder.mapCodec((instance) -> commonFields(instance).and(instance.group(ComponentSerialization.CODEC.optionalFieldOf("set_block_state")
@@ -28,6 +29,7 @@ public class SetBlockStateFunction extends LootItemConditionalFunction {
         super(predicates);
         this.blockState = blockState;
         this.blockPos = blockPos;
+        
     }
 
     @Override

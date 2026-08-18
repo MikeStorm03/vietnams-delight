@@ -9,7 +9,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.LoomBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.material.MapColor;
@@ -23,10 +23,11 @@ public interface VDBlocks {
     // // Crops
     // static Block STICKY_RICE = registryBlock("sticky_rice", new)
     static Block COFFEE = registryWithoutBlockItem("coffee",
-                            new Coffee(Properties.of().mapColor(MapColor.PLANT).strength(0.1F).noCollission().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+                            new Coffee(Properties.of().mapColor(MapColor.PLANT).strength(0.2F).noCollission().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
 
     // // Produce Bags
-    static Block coffee_box  = registryBlock("coffee_box", new SimpleHorizontalDirectionalBlock(Properties.of()));
+    static Block COFFEE_BOX  = registryBlock("coffee_box",
+                            new SimpleHorizontalDirectionalBlock(Properties.ofFullCopy(Blocks.OAK_PLANKS).strength(2.0F, 3.0F).sound(SoundType.WOOL).ignitedByLava()));
 
 
     // -----------**§§§**----------- //
@@ -49,9 +50,7 @@ public interface VDBlocks {
         Registry.register(BuiltInRegistries.ITEM,
                         Constants.resourcesLocation(name),
                         new BlockItem(block, properties));
-        return Registry.register(BuiltInRegistries.BLOCK,
-                                Constants.resourcesLocation(name),
-                                block);
+        return registryWithoutBlockItem(name, block);
     }
 
     private static Block registryWithoutBlockItem(String name, Block block) {

@@ -17,14 +17,15 @@
     "item.vietnamsdelight.ceramic_cup": "Ceramic Cup",
 
     "item.vietnamsdelight.coffee_beans": "Coffee Beans",
-    "item.vietnamsdelight.coffee_pouch": "Coffee Pouch",
+    "item.vietnamsdelight.coffee_pack": "Coffee Pack",
     "block.vietnamsdelight.coffee_box": "Coffee Box",
 
     "item.vietnamsdelight.condensed_milk": "Condensed Milk",
+    "tooltip.farmersdelight.condensed_milk": "Very sweet drink provide lot of energy",
 
     "item.vietnamsdelight.roasted_coffee_beans": "Roasted Coffee Beans",
     "item.vietnamsdelight.coffee_cup": "Coffee Cup",
-    "farmersdelight.tooltip.coffee_cup": "A hot cup of Coffee",
+    "tooltip.farmersdelight.coffee_cup": "A drink that is very popular in Vietnam",
     "item.vietnamsdelight.coffee.black_coffee": "Black Coffee",
     "item.vietnamsdelight.coffee.milk_coffee": "Milk Coffee",
     "item.vietnamsdelight.coffee.bac_xiu": "Bac Xiu",

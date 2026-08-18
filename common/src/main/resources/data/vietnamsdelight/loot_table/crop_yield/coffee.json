@@ -8,7 +8,7 @@
                     "block": "vietnamsdelight:coffee",
                     "condition": "minecraft:block_state_property",
                     "properties": {
-                        "age": "7"
+                        "age": "5"
                     }
                 }
             ],

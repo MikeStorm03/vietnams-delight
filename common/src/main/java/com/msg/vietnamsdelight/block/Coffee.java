@@ -1,16 +1,17 @@
 package com.msg.vietnamsdelight.block;
 
 import com.mojang.serialization.MapCodec;
+import com.msg.vietnamsdelight.Constants;
 import com.msg.vietnamsdelight.registries.VDItems;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -34,8 +35,16 @@ public final class Coffee extends Perennical2BlocksTallCrop {
     }
 
     @Override
-    protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+    protected boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+        if (!this.isUpper(state) && level.getBlockState(pos.below()).is(BlockTags.DIRT) && hasSufficientLight(level, pos)) return true;
+        return super.canSurvive(state, level, pos);
     }
+
+    // @Override
+    // protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
+    //     Constants.LOG.info("super method return: {}\nis below farmland: {}", super.mayPlaceOn(state, level, pos), state.is(Blocks.FARMLAND));
+    //     return super.mayPlaceOn(state, level, pos);
+    // }
 
     @Override
     public int getMaxAge() {

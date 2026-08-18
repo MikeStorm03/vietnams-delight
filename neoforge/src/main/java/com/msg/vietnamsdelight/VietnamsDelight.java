@@ -2,7 +2,7 @@ package com.msg.vietnamsdelight;
 
 import com.msg.vietnamsdelight.registries.VDBrewings;
 import com.msg.vietnamsdelight.registries.VDCraftingRecipeType;
-import com.msg.vietnamsdelight.registries.VDItems;
+import com.msg.vietnamsdelight.registries.loot_table.VDLootItemConditions;
 
 import net.minecraft.core.Registry;
 
@@ -27,7 +27,8 @@ public class VietnamsDelight {
     public static void registerSetup(RegisterEvent event) {
         Registry<?> registry = event.getRegistry();
         if (registry.equals(BuiltInRegistries.ITEM)) VDBrewings.registerCustomBrewRecipe();
-        if (registry.equals(BuiltInRegistries.RECIPE_SERIALIZER)) VDCraftingRecipeType.init();
+        else if (registry.equals(BuiltInRegistries.RECIPE_SERIALIZER)) VDCraftingRecipeType.init();
+        else if (registry.equals(BuiltInRegistries.LOOT_CONDITION_TYPE)) VDLootItemConditions.init();
     }
 
 }

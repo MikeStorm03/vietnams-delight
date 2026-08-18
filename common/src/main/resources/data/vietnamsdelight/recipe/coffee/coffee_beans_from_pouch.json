@@ -3,7 +3,7 @@
     "group": "coffee_beans",
     "ingredients": [
         {
-            "item": "vietnamsdelight:coffee_pouch"
+            "item": "vietnamsdelight:coffee_pack"
         }
     ],
     "result": {

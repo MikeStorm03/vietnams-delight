@@ -6,6 +6,7 @@ import com.msg.vietnamsdelight.Constants;
 import com.msg.vietnamsdelight.item.VDFoodComponents;
 import com.msg.vietnamsdelight.platform.Services;
 import com.msg.vietnamsdelight.item.NonLaItem;
+import com.msg.vietnamsdelight.item.SeedItem;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponentMap;
@@ -16,9 +17,8 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BottleItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.block.Block;
 import net.zachsroom.vietnamsdelight.item.ModFoodComponents;
@@ -38,12 +38,12 @@ public interface VDItems {
 
     // // Coffee
     Item COFFEE_BEANS = seedItem("coffee_beans", VDBlocks.COFFEE);
-    Item COFFEE_POUCH = basicItem("coffee_pouch");
+    Item COFFEE_PACK = basicItem("coffee_pack");
     Item ROAST_COFFEE_BEANS = foodItem("roasted_coffee_beans", VDFoodComponents.ROAST_COFFEE_BEANS);
-    Item COFFEE_CUP = drinkItem("coffee_cup", new Item.Properties().craftRemainder(CERAMIC_CUP).stacksTo(16));
+    Item COFFEE_CUP = drinkItem("coffee_cup", new Properties().craftRemainder(CERAMIC_CUP).stacksTo(16).food(VDFoodComponents.DRINKS));
 
     // // Condensed Milk
-    Item CONDENSED_MILK = drinkItem("condensed_milk", new Item.Properties().stacksTo(16).food(VDFoodComponents.CONDENSED_MILK));
+    Item CONDENSED_MILK = drinkItem("condensed_milk", new Properties().craftRemainder(Items.GLASS_BOTTLE).stacksTo(16).food(VDFoodComponents.CONDENSED_MILK));
 
 
     // -----------**§§§**----------- //
@@ -88,8 +88,8 @@ public interface VDItems {
                                                                                 output.accept(COFFEE_BEANS);
 
                                                                                 // Produce Bags
-                                                                                output.accept(COFFEE_POUCH);
-                                                                                output.accept(VDBlocks.coffee_box );
+                                                                                output.accept(COFFEE_PACK);
+                                                                                output.accept(VDBlocks.COFFEE_BOX );
 
                                                                                 // Ingredients
                                                                                 output.accept(RICEFLOUR);
@@ -164,21 +164,15 @@ public interface VDItems {
     }
 
     private static Item drinkItem(String name, Properties properties){
-        return Registry.register(BuiltInRegistries.ITEM,
-                                Constants.resourcesLocation(name),
-                                Services.FD_ITEMS.DrinkableItem(properties, false, true));
+        return registryItem(name, Services.FD_ITEMS.DrinkableItem(properties, false, true));
     }
 
     private static Item seedItem(String name, Block block_crop) {
-        return Registry.register(BuiltInRegistries.ITEM,
-                                Constants.resourcesLocation(name),
-                                new ItemNameBlockItem(block_crop, new Properties()));
+        return registryItem(name, new SeedItem(block_crop, new Properties()));
     }
 
     private static Item registryItem(String name, Properties properties) {
-        return Registry.register(BuiltInRegistries.ITEM,
-                                Constants.resourcesLocation(name),
-                                new Item(properties));
+        return registryItem(name, new Item(properties));
     }
 
     private static Item registryItem(String name, Item item) {

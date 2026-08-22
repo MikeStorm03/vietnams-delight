@@ -1,3 +1,7 @@
+# Vanilla
+
+FIX THE FUCKING EFFECT BUG THAT USING LAMBDA THAT DROVE ME CRAZY
+
 # Enhance old features
 
 ## Non la
@@ -12,8 +16,15 @@
 * Use stuff food in short baguette make banh mi
 * Ice-cream banh mi
 
+## Coffee Drink
+* Change Coffee Drink Tooltip
 
 # New Features
+
+## Pottery
+For Clay Cup and maybe future things. Haven't figured it out yet.
+* Potter's Wheel
+* New villager type
 
 ## Giò lụa
 

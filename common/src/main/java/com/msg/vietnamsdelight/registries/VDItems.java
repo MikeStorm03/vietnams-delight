@@ -20,6 +20,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Item.Properties;
+import net.minecraft.world.item.component.CustomModelData;
 import net.minecraft.world.level.block.Block;
 import net.zachsroom.vietnamsdelight.item.ModFoodComponents;
 
@@ -97,7 +98,6 @@ public interface VDItems {
                                                                                 output.accept(RICEMIXEDDOUGH);
                                                                                 output.accept(RICEBATTER);
                                                                                 // output.accept(YEAST);
-                                                                                output.accept(ROAST_COFFEE_BEANS);
 
                                                                                 // Food
                                                                                 output.accept(BANHMI);
@@ -108,9 +108,12 @@ public interface VDItems {
                                                                                 output.accept(BEEFPHO);
                                                                                 output.accept(CHICKENPHO);
 
+                                                                                // Coffee
+                                                                                output.accept(ROAST_COFFEE_BEANS);
                                                                                 output.accept(createItemStack(COFFEE_CUP, Services.BUILDERS.dataComponentMapBuilder(Map.of(
                                                                                                 DataComponents.ITEM_NAME, Component.translatable("item.vietnamsdelight.coffee.black_coffee"),
-                                                                                                DataComponents.FOOD, VDFoodComponents.BLACK_COFFEE
+                                                                                                DataComponents.FOOD, VDFoodComponents.BLACK_COFFEE,
+                                                                                                DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(1)
                                                                                 ))));
                                                                                 output.accept(createItemStack(COFFEE_CUP, Services.BUILDERS.dataComponentMapBuilder(Map.of(
                                                                                                 DataComponents.ITEM_NAME, Component.translatable("item.vietnamsdelight.coffee.milk_coffee"),
@@ -118,11 +121,13 @@ public interface VDItems {
                                                                                 ))));
                                                                                 output.accept(createItemStack(COFFEE_CUP, Services.BUILDERS.dataComponentMapBuilder(Map.of(
                                                                                                 DataComponents.ITEM_NAME, Component.translatable("item.vietnamsdelight.coffee.bac_xiu"),
-                                                                                                DataComponents.FOOD, VDFoodComponents.BAC_XIU
+                                                                                                DataComponents.FOOD, VDFoodComponents.BAC_XIU,
+                                                                                                DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(2)
                                                                                 ))));
                                                                                 output.accept(createItemStack(COFFEE_CUP, Services.BUILDERS.dataComponentMapBuilder(Map.of(
                                                                                                 DataComponents.ITEM_NAME, Component.translatable("item.vietnamsdelight.coffee.egg_coffee"),
-                                                                                                DataComponents.FOOD, VDFoodComponents.EGG_COFFEE
+                                                                                                DataComponents.FOOD, VDFoodComponents.EGG_COFFEE,
+                                                                                                DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(3)
                                                                                 ))));
 
                                                                                 // Container

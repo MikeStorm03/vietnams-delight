@@ -40,12 +40,6 @@ public final class Coffee extends Perennical2BlocksTallCrop {
         return super.canSurvive(state, level, pos);
     }
 
-    // @Override
-    // protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
-    //     Constants.LOG.info("super method return: {}\nis below farmland: {}", super.mayPlaceOn(state, level, pos), state.is(Blocks.FARMLAND));
-    //     return super.mayPlaceOn(state, level, pos);
-    // }
-
     @Override
     public int getMaxAge() {
         return 5;

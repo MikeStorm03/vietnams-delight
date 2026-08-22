@@ -32,7 +32,7 @@ public class GetExplodedCondition implements LootItemCondition {
     @Override
     public boolean test(LootContext context) {
         Float exlosionRadius = context.getParamOrNull(LootContextParams.EXPLOSION_RADIUS);
-        Constants.LOG.info("testing for exlosion. Explosion radius is {}", exlosionRadius);
+        // Constants.LOG.info("testing for exlosion. Explosion radius is {}", exlosionRadius);
         return exlosionRadius != null;
     }
 

@@ -1,6 +1,26 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "vietnamsdelight:item/coffee_cup"
-  }
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "vietnamsdelight:item/coffee_cup"
+    },
+    "overrides": [
+        {
+            "model": "vietnamsdelight:item/coffee_cup/black_coffee",
+            "predicate": {
+                "custom_model_data": 1
+            }
+        },
+        {
+            "model": "vietnamsdelight:item/coffee_cup/bac_xiu",
+            "predicate": {
+                "custom_model_data":2
+            }
+        },
+        {
+            "model": "vietnamsdelight:item/coffee_cup/egg_coffee",
+            "predicate": {
+                "custom_model_data": 3
+            }
+        }
+    ]
 }

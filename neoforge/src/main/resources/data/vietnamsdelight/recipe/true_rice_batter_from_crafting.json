@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "hauntedharvest"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "corn_delight"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "culturaldelights"
+          }
+        ]
+      }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "vietnamsdelight:rice_flour"
+    },
+    {
+      "item": "vietnamsdelight:rice_flour"
+    },
+    {
+      "item": "vietnamsdelight:rice_flour"
+    },
+    {
+      "item": "vietnamsdelight:corn_starch"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "vietnamsdelight:rice_batter"
+  }
+}

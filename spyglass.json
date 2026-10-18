@@ -1,0 +1,12 @@
+{
+   "env": {
+      "gameVersion": "1.21.1",
+      "mcmetaSummaryOverrides": {
+         "registries": {
+            "path": "mcdoc/registries.json",
+            "replace": true
+         }
+
+      }
+   }
+}

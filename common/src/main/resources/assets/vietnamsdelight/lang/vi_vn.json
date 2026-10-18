@@ -1,0 +1,33 @@
+{
+    "item.vietnamsdelight.rice_flour": "Bột gạo",
+    "item.vietnamsdelight.banh_mi": "Bánh mì",
+    "item.vietnamsdelight.rice_mixed_wheat_dough": "Bột mì trộn bột gạo",
+    "item.vietnamsdelight.rice_batter": "Tô bột gạo",
+    "item.vietnamsdelight.rice_noodle_sheet": "Lá phở",
+    "item.vietnamsdelight.flat_rice_noodle": "Bánh phở",
+    "item.vietnamsdelight.pho": "Phở",
+    "item.vietnamsdelight.beef_pho": "Phở bò",
+    "item.vietnamsdelight.corn_starch": "Bột bắp",
+    "item.vietnamsdelight.chicken_pho": "Phở gà",
+    "item.vietnamsdelight.non_la": "Nón lá",
+
+    "itemgroup.vietnamsdelight": "Vietnam's Delight",
+
+    "item.vietnamsdelight.clay_cup": "Cốc đất sét",
+    "item.vietnamsdelight.ceramic_cup": "Cốc sứ",
+
+    "item.vietnamsdelight.coffee_beans": "Hạt cà phê",
+    "item.vietnamsdelight.coffee_pack": "Túi cà phê",
+    "block.vietnamsdelight.coffee_box": "Thùng cà phê",
+
+    "item.vietnamsdelight.condensed_milk": "Sữa đặc",
+    "farmersdelight.tooltip.condensed_milk": "Một loại thức uống giàu năng lượng",
+
+    "item.vietnamsdelight.roasted_coffee_beans": "Cà phê rang",
+    "item.vietnamsdelight.coffee_cup": "Cốc cà phê",
+    "farmersdelight.tooltip.coffee_cup": "Loại thức uống đặc biệt phổ biến tại Việt Nam",
+    "item.vietnamsdelight.coffee.black_coffee": "Cà phê đen",
+    "item.vietnamsdelight.coffee.milk_cofee": "Cà phê sữa",
+    "item.vietnamsdelight.coffee.bac_xiu": "Bạc xỉu",
+    "item.vietnamsdelight.coffee.egg_coffee": "Cà phê trứng"
+}

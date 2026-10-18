@@ -14,10 +14,10 @@ import net.minecraft.world.item.ItemStack;
 
 public class NonLaItem extends ArmorItem {
 
-    public static final ResourceLocation textureLocation = ResourceLocation.fromNamespaceAndPath(Constants.NAMESPACE, "textures/models/armor/non_la.png");
+    public static final ResourceLocation textureLocation = Constants.resourcesLocation("textures/models/armor/non_la.png");
 
     public NonLaItem() {
-        super(ModArmorMaterials.NONLA, ArmorItem.Type.HELMET, new Item.Properties());
+        super(VDArmorMaterials.NONLA, ArmorItem.Type.HELMET, new Item.Properties());
     }
 
     public @Nullable ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean inner) {

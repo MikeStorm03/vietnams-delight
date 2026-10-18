@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_recipe": {
+            "conditions": {
+                "recipe": "vietnamsdelight:coffee/crafting_special_coffee_drinks"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        },
+        "has_coffee_drink": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "vietnamsdelight:coffee_cup"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_coffee_drink",
+            "has_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "vietnamsdelight:coffee/crafting_special_coffee_drinks"
+        ]
+    }
+}

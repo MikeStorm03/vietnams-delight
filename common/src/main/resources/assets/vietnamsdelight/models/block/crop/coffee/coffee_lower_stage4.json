@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/cross",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"cross": "vietnamsdelight:block/coffee/coffee_lower_stage4",
+		"particle": "vietnamsdelight:block/coffee/coffee_lower_stage4"
+	}
+}
